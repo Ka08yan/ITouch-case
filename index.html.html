@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ITouch Case - Exclusive for iPhone 13 to 16</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    nav a {
+      color: #111;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0071e3;
+    }
+
+    .logo {
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: #111;
+    }
+
+    main {
+      padding-top: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .hero video {
+      max-width: 100%;
+      border-radius: 70px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      margin-bottom: 1.0rem;
+      outline: rgb(0, 0, 0) dotted 3px;
+      outline-offset: 1px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #111;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: #555;
+      max-width: 600px;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #111;
+      border-bottom: 2px solid #0071e3;
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
+    .product-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .info-card {
+      flex: 1 1 280px;
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .info-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: #0071e3;
+    }
+
+    .info-card p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .types {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .type-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .type-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .type-card img:hover {
+      transform: scale(1.1);
+    }
+
+    .type-card .btn-buy {
+      margin-top: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      object-fit: cover;
+      height: 200px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #777;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+    }
+
+    /* Buy button */
+    .btn-buy {
+      display: inline-block;
+      background: #0071e3;
+      color: #fff;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn-buy:hover {
+      background: #005bb5;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 0.5rem 0 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">ITouch Case</div>
+      <div>
+        <a href="#about">About the Product</a>
+        <a href="#types">Case Types</a>
+        <a href="#specifications">Specifications</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#buy">Buy</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <video autoplay muted loop playsinline style="outline: rgb(0, 0, 0) dotted 3px; outline-offset: 1px;">
+        <source src="video-demo.mp4" type="video/mp4" />
+        Your browser does not support video.
+      </video>
+      <h1>ITouch Case</h1>
+      <p>Exclusive for iPhone 13 to 16. An iPhone case with a built-in rear IPS screen of 60Hz for watching videos directly on the back of the case. Available in Economy, Standard, and Premium models.</p>
+      <a href="#buy" class="btn-buy">Buy Now</a>
+    </section>
+
+    <section id="about">
+      <h2>About the Product</h2>
+      <p>This innovative ITouch Case features an integrated rear IPS screen of 60Hz that allows you to display videos, making your iPhone even more exclusive and functional. All types include the rear screen. Choose from our three types: Economy, Standard, and Premium, each offering different materials, battery life, and features.</p>
+      <p>Charging is fast and efficient with the included charger for Premium models (1 hour to complete with 25W charger).</p>
+    </section>
+
+    <section id="types">
+      <h2>Case Types</h2>
+      <div class="types">
+        <div class="type-card">
+          <img src="https://i.imgur.com/mmnmBaF.png" alt="Back view of iPhone 16 Pro in ITouch Case with rear IPS 60Hz screen, simple design." />
+          <h3>Economy - £29</h3>
+          <p>Includes a 2.1-inch screen with acrylic glass, a 60Hz VA display, plastic case, and a battery that lasts up to 6 hours.</p>
+          <a href="#" class="btn-buy">Buy Economy</a>
+        </div>
+        <div class="type-card">
+          <img src="https://i.imgur.com/mc8hTIU.png" alt="Back view of iPhone 16 Pro in ITouch Case with rear IPS 60Hz screen, simple design." />
+          <h3>Standard - £39</h3>
+          <p>Includes a 3.1-inch 60Hz VA screen with acrylic glass, a premium plastic case, and a battery that lasts up to 6 hours.</p>
+          <a href="#" class="btn-buy">Buy Standard</a>
+        </div>
+        <div class="type-card">
+          <img src="https://i.imgur.com/t9p3RLa.png" alt="Back view of iPhone 16 Pro in ITouch Case with rear IPS 60Hz screen, simple design compatible with Apple Pencil." />
+          <h3>Premium - £69</h3>
+          <p>Includes a 4.3-inch 60Hz IPS screen, ceramic glass, a carbon fiber case, a 12-hour battery, a fast charger included, and is compatible with the Apple Pencil.</p>
+          <a href="#" class="btn-buy">Buy Premium</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="specifications">
+      <h2>Technical Specifications</h2>
+      <div class="product-info">
+        <div class="info-card">
+          <h3>Battery</h3>
+          <p>The battery lasts up to 12 hours and can be recharged over 500 times. All versions are factory-tested for top quality.</p>
+        </div>
+        <div class="info-card">
+          <h3>Charging</h3>
+          <p>Rapid charging in 1 hour with included 25W charger for Premium model.</p>
+        </div>
+        <div class="info-card">
+          <h3>Compatibility</h3>
+          <p>Exclusive for iPhones 13, 14, 15, and 16 models. Premium model compatible with Apple Pencil.</p>
+        </div>
+        <div class="info-card">
+          <h3>Colors</h3>
+          <p>Available in Deep Blue, Dark Night and White Lotus for all types.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://media.wired.com/photos/6500ad57fe61eb702d721b58/4:3/w_1913,h_1435,c_limit/Apple-iPhone-15-Pro-Hero-Gear.jpg" alt="Identical back view of iPhone 16 Pro in ITouch Case with rear IPS 60Hz screen, simple design." />
+        <img src="https://techcrunch.com/wp-content/uploads/2020/10/Apple_announce-iphone12pro_10132020.jpg" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRkDetDN8Bw6doc3odXqXwbHfBGDtcJPbiWg&s" alt="Identical back view of iPhone 16 Pro in ITouch Case with rear IPS 60Hz screen, simple design." />
+      </div>
+    </section>
+
+    <section id="buy" style="text-align:center;">
+      <h2>Buy</h2>
+      <p>Get your exclusive ITouch Case now and transform your iPhone into a unique experience. Choose your type and color above!</p>
+      <a href="#" class="btn-buy">Buy Now</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Yan Miquelute. All rights reserved.
+  </footer>
+</body>
+</html>
+</content>
+</create_file>
